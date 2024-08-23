@@ -10,7 +10,7 @@ import streamlit as st
 
 gl = 'GSQ/data/pgamelog24.csv'
 
-gl['GS'] = gl['GS'].astype(int)
+gl['GS'] = pd.to_numeric(gl['GS'], errors='coerce')
 gl['PitcherID'] = gl['PitcherID'].astype(str)
 
 spgl24 = pd.DataFrame(gl[gl['GS'] == 1])
