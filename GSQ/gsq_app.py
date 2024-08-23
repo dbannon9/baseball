@@ -8,10 +8,7 @@ import streamlit as st
 # Load game log data for starters into table
 # 
 
-dir = r'C:\Users\dbann\Documents\Baseball\code\GSQ\data'
-
-gl = pd.read_csv(
-    path.join(dir, 'pgamelog24.csv'))
+dir = 'GSQ/data/pgamelog24.csv'
 
 spgl24 = pd.DataFrame(gl[gl['GS'] == 1])
 spgl24['PitcherID'] = spgl24['PitcherID'].astype(str)
