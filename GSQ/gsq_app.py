@@ -8,7 +8,7 @@ import streamlit as st
 # Load game log data for starters into table
 # 
 
-gl = 'GSQ/data/pgamelog24.csv'
+gl = pd.read_csv('GSQ/data/pgamelog24.csv')
 
 gl['GS'] = pd.to_numeric(gl['GS'], errors='coerce')
 gl['PitcherID'] = gl['PitcherID'].astype(str)
