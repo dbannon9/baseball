@@ -8,7 +8,7 @@ import streamlit as st
 # Load game log data for starters into table
 # 
 
-dir = r'C:\Users\dbann\Documents\Baseball\GSQ\data'
+dir = r'C:\Users\dbann\Documents\Baseball\code\GSQ\data'
 
 gl = pd.read_csv(
     path.join(dir, 'pgamelog24.csv'))
